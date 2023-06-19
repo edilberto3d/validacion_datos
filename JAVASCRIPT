@@ -1,0 +1,30 @@
+var contador=0;
+function Formulario() {
+    var nombre = document.getElementById("nombre1").value;
+    var usuario = document.getElementById("usuari1").value;
+    var contraseña = document.getElementById("contraseña1").value;
+    var confirmarContraseña = document.getElementById("contraseña1_c").value;
+    var sexoo = document.getElementById("sexo1").value;
+    var correoo = document.getElementById("correo1").value;
+    var telefooo = document.getElementById("telefono1").value;
+    
+return Formulario();
+}
+var form=document.getElementById("fmrlogin").addEventListener("submit",function(evento){
+    
+    evento.preventDefault();
+    var btn=document.getElementById("enviar").value
+    var url="validacion.php"
+   
+    if(contraseña=confirmarContraseña){
+window.location.href=(url)
+    }
+    else if(contador<3){
+        contador=contador+1
+        alert("usuario o contraseña son incorrectos intento:"+contador)}
+        else{
+            btn.disabled=true
+         alert("suficientes intentos")
+
+    }
+} )
