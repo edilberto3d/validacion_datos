@@ -1,0 +1,50 @@
+*{
+    margin: auto;
+
+}
+body{
+    display: flex;
+   background-color: rgb(7, 7, 68);
+}
+label{
+    color: rgb(28, 36, 143);
+}
+.Datos{
+    width: 330px;
+    padding: 2pc 1pc;
+    background-color:rgb(210, 139, 243);
+    border-radius: 10px;    
+    text-align: center;
+    box-shadow: 0 20px 45px rgb(0,0,0,0.3) 
+}
+h1{
+
+    color: aliceblue;
+}
+button[type="submit"] {
+    background-color: #08bb26;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.contenedor {
+    text-align: center;
+  }
+ 
+input{ 
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 1px solid #0879bb;
+    
+  }
+input:invalid{
+    color:rgb(0, 0, 0);
+}
+input:valid{
+    background-color: #2cc753;
+}

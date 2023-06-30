@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="iniciostyle.css"> 
+   
+
+</head>
+<body>
+    <div class="container">
+    <h1>DATOS:</h1>
+    <form  method="post" action="./PHP/registro.php" id="frmregistro"  autocomplete="on">
+        <div class="form-group">    
+            <label for="Nombre">NOMBRE:</label>
+              <input type="text" name="Nombre" 
+              id="Nombre" placeholder="Insertar nombre"
+              maxlength="50" 
+              minlength="5"
+              pattern="[a-zA-Z]+" title="solo se aceptan letras" required>
+          </div>
+          
+        <div class="form-group">
+        <label for="User">USUARIO:</label>
+        <input type="text" name="User" 
+        id="User" placeholder="Insertar Usuario"
+        maxlength="30" 
+        minlength="3"
+        pattern="[0-9a-zA-Z]+" title="solo se aceptan numeros y letras" required>
+    </div>
+<div class="form-group">
+<label for="pss">CONTRASEÑA:</label>
+<input type="password" 
+ name="pss" 
+  id="password1" placeholder="Insertar contraseña"
+maxlength="20" 
+minlength="5"
+autocomplete="off"
+pattern="[0-9A-Za-z]+" required title="solo se aceptan numeros y letras">
+</div>
+
+<div class="form-group">
+    <label for="pass2">CONFIRMAR CONTRASEÑA:</label>
+    <input type="password" 
+     name="pass2" 
+    id="password2" placeholder="Insertar nuevamente tu contraseña"
+    maxlength="20" 
+    minlength="5"
+    pattern="[0-9A-Za-z]+" required title="solo se aceptan numeros y letras">
+    </div>
+
+    <div class="form-group">
+        <label for="sexo">SEXO:</label>
+        <select name="sexo" id="sexo" required>
+            <option value=""></option>
+            <option  name="a" selected>Masculino</option>
+            <option  name="s" selected>Femenino</option>
+        </select>
+    </div>
+    <di class="form-group">
+        <label for="correo">CORREO ELECTRONICO:</label>
+        <input type="email" name="correo" id="correo" minlength="6"
+        pattern="['^(.+)@(\\S+)$']+" required placeholder="Inserta tu correo electronico">
+    </di>
+    <div class="form-group">
+        <br>
+        <label for="Numero">TELEFONO:</label>
+        <input type="tel" placeholder="Insertar numero de telefono" 
+        required name="Numero" id="Numero" pattern="[0-9]+"
+        minlength="10" maxlength="12">
+    </div>
+    
+    <div class="form-group">
+        <input type="submit" 
+        id="Registrarse"
+        title="Registrarse"
+         name="Login" 
+        value="Registrar" required>
+        <br>
+        </div>
+
+</div>
+<script src="./JS/validaregistro.js"></script>
+</form>
+
+</body>
+</html>
